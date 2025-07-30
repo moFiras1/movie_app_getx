@@ -4,6 +4,8 @@ import '../modules/browse_screen/bindings/browse_screen_binding.dart';
 import '../modules/browse_screen/views/browse_screen_view.dart';
 import '../modules/home_screen/bindings/home_screen_binding.dart';
 import '../modules/home_screen/views/home_screen_view.dart';
+import '../modules/inner_movie/bindings/inner_movie_binding.dart';
+import '../modules/inner_movie/views/inner_movie_view.dart';
 import '../modules/nave_screen/bindings/nave_screen_binding.dart';
 import '../modules/nave_screen/views/nave_screen_view.dart';
 import '../modules/search_screen/bindings/search_screen_binding.dart';
@@ -50,6 +52,11 @@ class AppPages {
       name: _Paths.WATCH_LIST_SCREEN,
       page: () => const WatchListScreenView(),
       binding: WatchListScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.INNER_MOVIE,
+      page: () => const InnerMovieView(),
+      binding: InnerMovieBinding(),
     ),
   ];
 }

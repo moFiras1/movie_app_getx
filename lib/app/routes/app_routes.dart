@@ -10,6 +10,7 @@ abstract class Routes {
   static const SEARCH_SCREEN = _Paths.SEARCH_SCREEN;
   static const BROWSE_SCREEN = _Paths.BROWSE_SCREEN;
   static const WATCH_LIST_SCREEN = _Paths.WATCH_LIST_SCREEN;
+  static const INNER_MOVIE = _Paths.INNER_MOVIE;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const SEARCH_SCREEN = '/search-screen';
   static const BROWSE_SCREEN = '/browse-screen';
   static const WATCH_LIST_SCREEN = '/watch-list-screen';
+  static const INNER_MOVIE = '/inner-movie';
 }

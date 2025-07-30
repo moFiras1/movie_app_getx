@@ -11,16 +11,16 @@ class NaveScreenView extends GetView<NaveScreenController> {
     return Obx(
       () =>  Scaffold(
         body: controller.pages[controller.index.value],
-        bottomNavigationBar:
-          NavigationBar(
-            onDestinationSelected: (value) => controller.index.value=value,
-              selectedIndex: controller.index.value,
-              destinations: const[
-            NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Icons.search), label: 'Search'),
-            NavigationDestination(icon: Icon(Icons.movie), label: 'Browse'),
-            NavigationDestination(icon: Icon(Icons.book), label: 'Watch List'),
-          ]),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: controller.index.value,
+          onTap: (value) => controller.index.value = value,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.house), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+            BottomNavigationBarItem(icon: Icon(Icons.movie), label: 'Browse'),
+            BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Watch List'),
+          ],
+        ),
 
       ),
     );
